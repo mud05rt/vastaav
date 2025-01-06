@@ -16,7 +16,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #964B00; 
+    background-color: #0fabd6; 
     color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
@@ -57,7 +57,7 @@ nav .button:hover {
 
 /* Section styles */
 section {
-    background-color: #964B00; /* Slightly lighter black-gray for sections */
+    background-color: #0fabd6; /* Slightly lighter black-gray for sections */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;

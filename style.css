@@ -8,7 +8,7 @@
 /* General body styles */
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #ffffff; 
+    background-color: #fffa6e; 
     color: rgb(0, 0, 0); 
     line-height: 1.6;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #ffffff; 
+    background-color: #fcfe73; 
     color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
@@ -41,7 +41,7 @@ nav {
 
 nav .button {
     background-color: #6ae497; /* Light yellow-orange button color */
-    color: white;
+    color: rgb(254, 254, 129);
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -57,7 +57,7 @@ nav .button:hover {
 
 /* Section styles */
 section {
-    background-color: #ffffff; /* Slightly lighter black-gray for sections */
+    background-color: #fff586; /* Slightly lighter black-gray for sections */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -66,7 +66,7 @@ section {
 
 /* About section styling */
 #More Information {
-    background-color: #e6d9d9; /* A dark gray background for contrast */
+    background-color: #e6ec64; /* A dark gray background for contrast */
 }
 
 /* City Map image styles */

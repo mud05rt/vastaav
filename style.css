@@ -8,7 +8,7 @@
 /* General body styles */
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #fffa6e; 
+    background-color: #ffffff; 
     color: rgb(0, 0, 0); 
     line-height: 1.6;
     padding: 20px;
@@ -81,7 +81,7 @@ section {
 
 /* Button styling within sections */
 button {
-    background-color: #adfab5; /* Light yellow-orange color for buttons */
+    background-color: #71d6f2; /* Light yellow-orange color for buttons */
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     margin: 10px;
@@ -93,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: #83f38e; /* Slightly darker yellow-orange for hover effect */
+    background-color: #48cbec; /* Slightly darker yellow-orange for hover effect */
 }
 
 /* Footer styling */
@@ -115,7 +115,7 @@ footer {
     width: 100%;
     max-width: 200px;
     margin: 10px;
-}
+} 
 
 /* Section heading styles */
 h2 {
@@ -124,7 +124,7 @@ h2 {
     font-size: 1.8em;
 }
 h3 {
-    color: #31e63a; /* Light yellow-orange headings */
+    color: #0c7a11; /* Light yellow-orange headings */
     margin-bottom: 10px;
     font-size: 3em;
 }

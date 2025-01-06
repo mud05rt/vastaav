@@ -501,10 +501,10 @@
 #include &lt;numeric&gt; // For accumulate function
 #include &lt;climits&gt; // For INT_MAX
             
-            using namespace std;
+using namespace std;
             
-            // Function for Optimal Tourist Routes (Graphs)
-            void optimalTouristRoutes() {
+// Function for Optimal Tourist Routes (Graphs)
+void optimalTouristRoutes() {
                 cout &lt;&lt; "Optimal Tourist Routes using Graphs\n";
                 int n;
                 cout &lt;&lt; "Enter the number of nodes: ";
@@ -520,10 +520,10 @@
                 }
             
                 cout &lt;&lt; "Optimal route (example): 0 -&gt; 1 -&gt; 3 -&gt; 2\n";
-            }
+}
             
-            // Function for Menu Item Sorting (Quick Sort)
-            void menuItemSorting() {
+// Function for Menu Item Sorting (Quick Sort)
+void menuItemSorting() {
                 cout &lt;&lt; "Menu Item Sorting by Price or Popularity\n";
                 int n;
                 cout &lt;&lt; "Enter the number of menu items: ";
@@ -546,10 +546,10 @@
                 for (auto item : menu) {
                     cout &lt;&lt; item.first &lt;&lt; " - $" &lt;&lt; item.second &lt;&lt; "\n";
                 }
-            }
+}
             
-            // Function for Traffic Monitoring (BFS)
-            void trafficMonitoring() {
+// Function for Traffic Monitoring (BFS)
+void trafficMonitoring() {
                 cout &lt;&lt; "Traffic Monitoring using BFS\n";
                 int n;
                 cout &lt;&lt; "Enter the number of nodes: ";
@@ -581,10 +581,10 @@
                     }
                 }
                 cout &lt;&lt; "\n";
-            }
+}
             
-            // Function for Waste Management (Dijkstra's)
-            void wasteManagement() {
+// Function for Waste Management (Dijkstra's)
+void wasteManagement() {
                 cout &lt;&lt; "Waste Management Route Optimization using Dijkstra's\n";
                 int n, e;
                 cout &lt;&lt; "Enter the number of nodes and edges: ";
@@ -617,10 +617,10 @@
                 cout &lt;&lt; "Shortest distances from Node 0: ";
                 for (int d : dist) cout &lt;&lt; d &lt;&lt; " ";
                 cout &lt;&lt; "\n";
-            }
+}
             
-            // Main Function
-            int main() {
+// Main Function
+int main() {
                 while (true) {
                     cout &lt;&lt; "\nChoose an option:\n";
                     cout &lt;&lt; "1. Optimal Tourist Routes\n";
@@ -636,9 +636,9 @@
                         case 1: optimalTouristRoutes(); break;
                         default: cout &lt;&lt; "Invalid choice. Try again.\n";
                     }
-                }
-                return 0;
-            }
+        }
+return 0;
+}
 </code>
 </pre>
      </section>

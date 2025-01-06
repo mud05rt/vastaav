@@ -71,7 +71,7 @@ section {
 
 /* City Map image styles */
 #city-map img {
-    width: 100%;
+    width: 150%;
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);

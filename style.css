@@ -40,7 +40,7 @@ nav {
 }
 
 nav .button {
-    background-color: #74fdfa; /* Light yellow-orange button color */
+    background-color: #71d6f2; /* Light yellow-orange button color */
     color: rgb(254, 254, 129);
     border: none;
     padding: 10px 20px;
@@ -122,6 +122,11 @@ h2 {
     color: #31e63a; /* Light yellow-orange headings */
     margin-bottom: 10px;
     font-size: 1.8em;
+}
+h3{
+    color: #31e63a; /* Light yellow-orange headings */
+    margin-bottom: 10px;
+    font-size: 1.6em;
 }
 h4{
     color: #0c7a11; /* Light yellow-orange headings */

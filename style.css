@@ -82,7 +82,7 @@ section {
 /* Button styling within sections */
 button {
     background-color: #adfab5; /* Light yellow-orange color for buttons */
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;

@@ -57,7 +57,7 @@ nav .button:hover {
 
 /* Section styles */
 section {
-    background-color: #fff586; /* Slightly lighter black-gray for sections */
+    background-color: #964B00; /* Slightly lighter black-gray for sections */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -129,7 +129,7 @@ h3{
     font-size: 1.6em;
 }
 h4{
-    color: #0c7a11; /* Light yellow-orange headings */
+    color: #F5F5DC; /* Light yellow-orange headings */
     margin-bottom: 10px;
     font-size: 3em;
 }

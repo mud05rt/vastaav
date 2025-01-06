@@ -176,15 +176,15 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #054604; /* Dark gray background for even rows */
+    background-color: #000043; /* Dark gray background for even rows */
 }
 
 tr:nth-child(odd) {
-    background-color: #18ac38; /* Slightly lighter gray for odd rows */
+    background-color: #71d6f2; /* Slightly lighter gray for odd rows */
 }
 
 tr:hover {
-    background-color: #0a7611; /* Hover effect on rows to highlight them */
+    background-color: #0fabd6 ; /* Hover effect on rows to highlight them */
 }
 
 td {

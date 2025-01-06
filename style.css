@@ -176,7 +176,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #000043; /* Dark gray background for even rows */
+    background-color: #000042; /* Dark gray background for even rows */
 }
 
 tr:nth-child(odd) {

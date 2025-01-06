@@ -505,138 +505,138 @@ using namespace std;
             
 // Function for Optimal Tourist Routes (Graphs)
 void optimalTouristRoutes() {
-                cout &lt;&lt; "Optimal Tourist Routes using Graphs\n";
-                int n;
-                cout &lt;&lt; "Enter the number of nodes: ";
-                cin &gt;&gt; n;
+    cout &lt;&lt; "Optimal Tourist Routes using Graphs\n";
+    int n;
+    cout &lt;&lt; "Enter the number of nodes: ";
+    cin &gt;&gt; n;
             
-                vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
+    vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
             
-                cout &lt;&lt; "Enter the adjacency matrix (distance between nodes):\n";
-                for (int i = 0; i &lt; n; ++i) {
-                    for (int j = 0; j &lt; n; ++j) {
-                        cin &gt;&gt; graph[i][j];
+    cout &lt;&lt; "Enter the adjacency matrix (distance between nodes):\n";
+        for (int i = 0; i &lt; n; ++i) {
+            for (int j = 0; j &lt; n; ++j) {
+                cin &gt;&gt; graph[i][j];
                     }
                 }
             
-                cout &lt;&lt; "Optimal route (example): 0 -&gt; 1 -&gt; 3 -&gt; 2\n";
+    cout &lt;&lt; "Optimal route (example): 0 -&gt; 1 -&gt; 3 -&gt; 2\n";
 }
             
 // Function for Menu Item Sorting (Quick Sort)
 void menuItemSorting() {
-                cout &lt;&lt; "Menu Item Sorting by Price or Popularity\n";
-                int n;
-                cout &lt;&lt; "Enter the number of menu items: ";
-                cin &gt;&gt; n;
+    cout &lt;&lt; "Menu Item Sorting by Price or Popularity\n";
+    int n;
+    cout &lt;&lt; "Enter the number of menu items: ";
+    cin &gt;&gt; n;
             
-                vector&lt;pair&lt;string, int&gt;&gt; menu;
-                for (int i = 0; i &lt; n; ++i) {
-                    string item;
-                    int price;
-                    cout &lt;&lt; "Enter item name and price: ";
-                    cin &gt;&gt; item &gt;&gt; price;
-                    menu.emplace_back(item, price);
-                }
+    vector&lt;pair&lt;string, int&gt;&gt; menu;
+        for (int i = 0; i &lt; n; ++i) {
+            string item;
+            int price;
+            cout &lt;&lt; "Enter item name and price: ";
+            cin &gt;&gt; item &gt;&gt; price;
+            menu.emplace_back(item, price);
+            }
             
-                sort(menu.begin(), menu.end(), [](pair&lt;string, int&gt; a, pair&lt;string, int&gt; b) {
-                    return a.second &lt; b.second; // Sort by price (ascending)
-                });
+    sort(menu.begin(), menu.end(), [](pair&lt;string, int&gt; a, pair&lt;string, int&gt; b) {
+        return a.second &lt; b.second; // Sort by price (ascending)
+        });
             
-                cout &lt;&lt; "Sorted Menu:\n";
-                for (auto item : menu) {
-                    cout &lt;&lt; item.first &lt;&lt; " - $" &lt;&lt; item.second &lt;&lt; "\n";
-                }
+    cout &lt;&lt; "Sorted Menu:\n";
+    for (auto item : menu) {
+    cout &lt;&lt; item.first &lt;&lt; " - $" &lt;&lt; item.second &lt;&lt; "\n";
+    }
 }
             
 // Function for Traffic Monitoring (BFS)
 void trafficMonitoring() {
-                cout &lt;&lt; "Traffic Monitoring using BFS\n";
-                int n;
-                cout &lt;&lt; "Enter the number of nodes: ";
-                cin &gt;&gt; n;
+    cout &lt;&lt; "Traffic Monitoring using BFS\n";
+    int n;
+    cout &lt;&lt; "Enter the number of nodes: ";
+    cin &gt;&gt; n;
             
-                vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
+    vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
             
-                cout &lt;&lt; "Enter the adjacency matrix (1 for connected, 0 for not connected):\n";
-                for (int i = 0; i &lt; n; ++i) {
-                    for (int j = 0; j &lt; n; ++j) {
-                        cin &gt;&gt; graph[i][j];
+    cout &lt;&lt; "Enter the adjacency matrix (1 for connected, 0 for not connected):\n";
+    for (int i = 0; i &lt; n; ++i) {
+        for (int j = 0; j &lt; n; ++j) {
+            cin &gt;&gt; graph[i][j];
                     }
-                }
+        }
             
-                vector&lt;bool&gt; visited(n, false);
-                queue&lt;int&gt; q;
-                q.push(0);
-                visited[0] = true;
-                cout &lt;&lt; "BFS Order: ";
-                while (!q.empty()) {
-                    int node = q.front();
-                    q.pop();
-                    cout &lt;&lt; node &lt;&lt; " ";
-                    for (int i = 0; i &lt; n; ++i) {
-                        if (graph[node][i] == 1 &amp;&amp; !visited[i]) {
-                            visited[i] = true;
-                            q.push(i);
+    vector&lt;bool&gt; visited(n, false);
+    queue&lt;int&gt; q;
+    q.push(0);
+    visited[0] = true;
+    cout &lt;&lt; "BFS Order: ";
+    while (!q.empty()) {
+        int node = q.front();
+        q.pop();
+        cout &lt;&lt; node &lt;&lt; " ";
+        for (int i = 0; i &lt; n; ++i) {
+            if (graph[node][i] == 1 &amp;&amp; !visited[i]) {
+                visited[i] = true;
+                q.push(i);
                         }
-                    }
                 }
-                cout &lt;&lt; "\n";
+        }
+    cout &lt;&lt; "\n";
 }
             
 // Function for Waste Management (Dijkstra's)
 void wasteManagement() {
-                cout &lt;&lt; "Waste Management Route Optimization using Dijkstra's\n";
-                int n, e;
-                cout &lt;&lt; "Enter the number of nodes and edges: ";
-                cin &gt;&gt; n &gt;&gt; e;
+    cout &lt;&lt; "Waste Management Route Optimization using Dijkstra's\n";
+    int n, e;
+    cout &lt;&lt; "Enter the number of nodes and edges: ";
+    cin &gt;&gt; n &gt;&gt; e;
             
-                vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; graph(n);
-                cout &lt;&lt; "Enter the edges (format: node1 node2 weight):\n";
-                for (int i = 0; i &lt; e; ++i) {
-                    int u, v, w;
-                    cin &gt;&gt; u &gt;&gt; v &gt;&gt; w;
-                    graph[u].emplace_back(v, w);
-                }
+    vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; graph(n);
+    cout &lt;&lt; "Enter the edges (format: node1 node2 weight):\n";
+    for (int i = 0; i &lt; e; ++i) {
+        int u, v, w;
+        cin &gt;&gt; u &gt;&gt; v &gt;&gt; w;
+        graph[u].emplace_back(v, w);
+        }
             
-                vector&lt;int&gt; dist(n, INT_MAX);
-                dist[0] = 0;
-                priority_queue&lt;pair&lt;int, int&gt;, vector&lt;pair&lt;int, int&gt;&gt;, greater&lt;&gt;&gt; pq;
-                pq.push({0, 0});
+    vector&lt;int&gt; dist(n, INT_MAX);
+    dist[0] = 0;
+    priority_queue&lt;pair&lt;int, int&gt;, vector&lt;pair&lt;int, int&gt;&gt;, greater&lt;&gt;&gt; pq;
+    pq.push({0, 0});
             
-                while (!pq.empty()) {
-                    auto [cost, node] = pq.top();
-                    pq.pop();
-                    for (auto [next, weight] : graph[node]) {
-                        if (dist[next] &gt; cost + weight) {
-                            dist[next] = cost + weight;
-                            pq.push({dist[next], next});
-                        }
-                    }
-                }
+    while (!pq.empty()) {
+        auto [cost, node] = pq.top();
+        pq.pop();
+        for (auto [next, weight] : graph[node]) {
+            if (dist[next] &gt; cost + weight) {
+                dist[next] = cost + weight;
+                pq.push({dist[next], next});
+        }
+    }
+}
             
-                cout &lt;&lt; "Shortest distances from Node 0: ";
-                for (int d : dist) cout &lt;&lt; d &lt;&lt; " ";
-                cout &lt;&lt; "\n";
+    cout &lt;&lt; "Shortest distances from Node 0: ";
+    for (int d : dist) cout &lt;&lt; d &lt;&lt; " ";
+    cout &lt;&lt; "\n";
 }
             
 // Main Function
 int main() {
-                while (true) {
-                    cout &lt;&lt; "\nChoose an option:\n";
-                    cout &lt;&lt; "1. Optimal Tourist Routes\n";
-                    cout &lt;&lt; "2. Menu Item Sorting\n";
-                    cout &lt;&lt; "3. Traffic Monitoring\n";
-                    cout &lt;&lt; "4. Waste Management\n";
-                    cout &lt;&lt; "7. Exit\n";
+    while (true) {
+        cout &lt;&lt; "\nChoose an option:\n";
+        cout &lt;&lt; "1. Optimal Tourist Routes\n";
+        cout &lt;&lt; "2. Menu Item Sorting\n";
+        cout &lt;&lt; "3. Traffic Monitoring\n";
+        cout &lt;&lt; "4. Waste Management\n";
+        cout &lt;&lt; "7. Exit\n";
             
-                    int choice;
-                    cin &gt;&gt; choice;
+        int choice;
+        cin &gt;&gt; choice;
             
-                    switch (choice) {
-                        case 1: optimalTouristRoutes(); break;
-                        default: cout &lt;&lt; "Invalid choice. Try again.\n";
-                    }
-        }
+        switch (choice) {
+            case 1: optimalTouristRoutes(); break;
+            default: cout &lt;&lt; "Invalid choice. Try again.\n";
+    }
+}
 return 0;
 }
 </code>

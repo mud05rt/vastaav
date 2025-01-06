@@ -160,7 +160,7 @@ th, td {
 }
 
 th {
-    background-color: #fae386; /* Light yellow-orange background for table headers */
+    background-color: #efde99; /* Light yellow-orange background for table headers */
     color: white;
     font-size: 1.1em;
 }
@@ -174,7 +174,7 @@ tr:nth-child(odd) {
 }
 
 tr:hover {
-    background-color: #444; /* Hover effect on rows to highlight them */
+    background-color: #0a7611; /* Hover effect on rows to highlight them */
 }
 
 td {

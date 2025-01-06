@@ -123,6 +123,11 @@ h2 {
     margin-bottom: 10px;
     font-size: 1.8em;
 }
+h3 {
+    color: #31e63a; /* Light yellow-orange headings */
+    margin-bottom: 10px;
+    font-size: 3em;
+}
 
 /* Unordered list styling */
 ul {
